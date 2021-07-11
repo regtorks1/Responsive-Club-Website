@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
+    max-height: 900px;
+    max-width: 1500px;
+    color: white;
+}
+
+body{
+    background-image: url("img/tobias-mrzyk-iuqmGmst5Po-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.site_logo{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;  
+       
+}
+
+.site_logo img{
+    height: 10.5rem;     
+}
+
+.navigation{
+    border: none;
+    background-color:rgb(87, 87, 122);
+    display: flex;
+    justify-content: center;
+    padding: 0.5%;
+    box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.navigation a{
+    margin: 1.45%;
+    letter-spacing: 2px;
+    font-size: 1.13rem;
+    color: white;
+}
+
+.navigation a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 250px){
+    .navigation{
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+.images {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img{
+    justify-items: center;
+    height: 12.5rem;
+    padding: 1rem
+}
+
+.images img:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 900px) and (min-width: 250px){
+    .images {
+        width: 100%;
+        height: auto;
+        flex: 1
+    }
+}
+
+.description{
+    margin: 2.5rem;
+    padding: 2.5rem;
+}
+
+.description p{
+    font-size: 1.13rem;
+    font-family: "Raleway";
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+.description a{
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
